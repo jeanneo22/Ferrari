@@ -26,8 +26,8 @@ sub new {
 		   $self = $class->SUPER::new($modelo,$velocidadeAtual,$velocidadeMaxima,$dataFabricacao,$quantidadePortaTreco,
 		   								$dinheiroPortaTreco);
 			# set para validação dos dados
-			$self->Automovel::modelo($modelo);
-			$self->Automovel::velocidadeMaxima($velocidadeMaxima);
+			$self->Carro::marchaAtiva($marchaAtiva);
+			$self->Carro::marchaTotal($marchaTotal);
 			return ($self);	
 		}
 	}
